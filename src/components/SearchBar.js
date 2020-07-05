@@ -12,7 +12,7 @@ export class SearchBar extends Component {
   onFormSubmit = event => {
     event.preventDefault()
 
-    // Todo: Add callback from parent component
+    this.props.onFormSubmit(this.state.term)
   }
 
   render() {
